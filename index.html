@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <!-- for theme daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- for daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- for tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="js.png" type="image/x-icon" />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="w-8/12 mx-auto py-5">
+        <h2 class="text-5xl font-bold text-primary">Job Application Tracker</h2>
+        <!-- For card -->
+        <div class="card-container py-5 flex gap-4">
+          <!-- card -->
+          <div class="card bg-neutral text-neutral-content w-full">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-4xl font-bold">TOTAL</h2>
+              <p class="text-3xl font-bold">8</p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card bg-neutral text-neutral-content w-full">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-4xl font-bold">INTERVIEW</h2>
+              <p class="text-3xl font-bold text-success">0</p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card bg-neutral text-neutral-content w-full">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-4xl font-bold">REJECTED</h2>
+              <p class="text-3xl font-bold text-secondary">0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Available jobs -->
+      <section class="w-8/12 mx-auto">
+        <div class="available-jobs flex justify-between">
+          <div class="left">
+            <p class="text-3xl font-bold">Available Jobs</p>
+          </div>
+          <div class="right">
+            <p class="text-3xl font-bold"><span>0</span> Jobs</p>
+          </div>
+        </div>
+        <!-- name of each tab group should be unique -->
+        <div class="tabs tabs-border py-5">
+          <input
+            type="radio"
+            name="my_tabs_2"
+            class="tab text-3xl text-black font-bold mb-2"
+            aria-label="All"
+            checked="checked"
+          />
+          <div
+            class="tab-content border-base-300 bg-base-100 border-primary p-10"
+          >
+            Tab content 1
+          </div>
+
+          <input
+            type="radio"
+            name="my_tabs_2"
+            class="tab text-3xl text-black font-bold mb-2"
+            aria-label="Interview"
+          />
+          <div class="tab-content border-base-300 bg-base-100 p-10">
+            Tab content 2
+          </div>
+
+          <input
+            type="radio"
+            name="my_tabs_2"
+            class="tab text-3xl text-black font-bold mb-2"
+            aria-label="Rejected"
+          />
+          <div class="tab-content border-base-300 bg-base-100 p-10">
+            Tab content 3
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
